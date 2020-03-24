@@ -1,0 +1,60 @@
+{
+  "name": "extend-antd",
+  "version": "1.0.0",
+  "description": "扩展antd组件",
+  "license": "MIT",
+  "repository": "github:yujingwyh/extend-antd",
+  "bugs": "https://github.com/yujingwyh/extend-antd/issues",
+  "keywords": [
+    "extend",
+    "antd",
+    "扩展",
+    "组件"
+  ],
+  "author": {
+    "name": "yujingwyh",
+    "email": "yujingwyh@163.com"
+  },
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --progress"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,css,less}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.8.6",
+    "antd": "^4.0.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-import": "^1.13.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^2.6.9",
+    "css-loader": "^3.4.2",
+    "html-webpack-harddisk-plugin": "^1.0.1",
+    "html-webpack-plugin": "^4.0.1",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.0.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.10.2"
+  }
+}
