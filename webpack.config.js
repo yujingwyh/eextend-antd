@@ -59,7 +59,7 @@ const webpackConfig = {
     alias: {
       'react-dom': '@hot-loader/react-dom',
 
-      "antd/lib/select$": path.resolve(__dirname, "src/antd/select")
+      "antd/lib/col$": path.resolve(__dirname, "src/antd/col")
     },
     modules: [nodeModules, srcModules],
     extensions: [".jsx", ".js", ".ts", ".tsx", ".json"],

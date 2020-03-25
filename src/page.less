@@ -1,0 +1,15 @@
+.page-row {
+  .ant-col {
+    height: 200px;
+
+    .loop(@count) when (@count > 0) {
+      &:nth-child(@{count}) {
+        background-color: #880 * @count;
+      }
+
+      .loop((@count - 1));
+    }
+
+    .loop(5);
+  }
+}
