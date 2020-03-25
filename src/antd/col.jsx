@@ -9,8 +9,9 @@ function CustomAntdCol(props) {
     style.width = width;
   }
 
-  return <AntdCol {...otherProps} style={style}>{props.children}</AntdCol>
+  return <AntdCol {...otherProps} style={style}>
+    {props.children}
+  </AntdCol>
 }
-
 
 export default CustomAntdCol;
