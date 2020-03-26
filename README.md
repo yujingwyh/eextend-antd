@@ -1,5 +1,4 @@
 # extend-antd
-扩展antd组件
 
 [我是如何无缝的扩展antd组件](https://zhuanlan.zhihu.com/p/111850451)
 
