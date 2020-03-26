@@ -57,8 +57,6 @@ const webpackConfig = {
   },
   resolve: {
     alias: {
-      'react-dom': '@hot-loader/react-dom',
-
       "antd/lib/col$": path.resolve(__dirname, "src/antd/col")
     },
     modules: [nodeModules, srcModules],
